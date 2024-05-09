@@ -10,4 +10,6 @@ class WelcomeStudents extends React.Component {
 
 }
 
+// new
+
 export default WelcomeStudents;

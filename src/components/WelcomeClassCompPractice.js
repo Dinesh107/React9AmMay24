@@ -4,8 +4,14 @@ class WelcomeStudents extends React.Component {
 
     render() {
 
-        return <h1>Welcome Students To the React Class, Class Comp</h1>
+        return (
+         <div>
+        <h1>Welcome {this.props.name} To the React Class, Class Comp and I play {this.props.sportsName}</h1>
 
+        <h1>Welcome {this.props.name} To the React Class, Class Comp and I play {this.props.sportsName}</h1>
+        </div>
+         
+        )
     }
 
 }

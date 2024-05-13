@@ -9,6 +9,7 @@ console.log(props)
         </div>
     )
 }
+
 export default Welcome;
 
 

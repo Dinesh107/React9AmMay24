@@ -1,11 +1,21 @@
 import React from 'react';
 
-const Welcome = (props) => {
-console.log(props)
+// const Welcome = ({name, sportsName}) => {
+//     return (
+//         <div>
+//             <h1>Hello I am {name}, I play {sportsName}</h1>
+//         </div>
+//     )
+// }
+
+
+const Welcome = (props) =>  {
+
+     const {name, sportsName} = props;
+
     return (
         <div>
-            <h1>Hello I am {props.name}, I play {props.sportsName}</h1>
-            {props.children}
+            <h1>Hello I am {name}, I play {sportsName}</h1>
         </div>
     )
 }

@@ -4,13 +4,24 @@ import Welcome from './components/WelcomeFunctionalCompPractice';
 import WelcomeStudents from './components/WelcomeClassCompPractice';
 import Information from './components/Information';
 import CounterClassState from './components/CounterClassState';
+import StudentsWelcomeConditionalIfElse from './components/StudentsWelcomeConditionalIfElse';
+import StylePracticeInReact from './components/StylePracticeInReact';
+import ProductsList from './components/ProductsList';
 
 
 function App() {
   return (
     <div className="App">
 
-      <CounterClassState/>
+      <ProductsList/>
+
+      {/* <StylePracticeInReact heading1={true}/> */}
+
+      {/* <StudentsWelcomeConditionalIfElse/> */}
+
+      {/* <Welcome name="Ganesh" sportsName="Cricket"/> */}
+
+      {/* <CounterClassState/> */}
     
        {/* <Information/>  */}
          

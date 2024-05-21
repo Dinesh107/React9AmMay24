@@ -7,13 +7,25 @@ import CounterClassState from './components/CounterClassState';
 import StudentsWelcomeConditionalIfElse from './components/StudentsWelcomeConditionalIfElse';
 import StylePracticeInReact from './components/StylePracticeInReact';
 import ProductsList from './components/ProductsList';
+import FragmentsPractice from './components/FragmentsPractice';
+import TableForFragmentsPractice from './components/TableForFragmentsPractice';
+import PureComponentsPractice from './components/PureComponentsPractice';
+import ParentCompPurePractice from './components/ParentCompPurePractice';
 
 
 function App() {
   return (
     <div className="App">
 
-      <ProductsList/>
+      <ParentCompPurePractice/>
+
+      {/* <PureComponentsPractice/> */}
+
+      {/* <TableForFragmentsPractice/> */}
+
+      {/* <FragmentsPractice/> */}
+
+      {/* <ProductsList/> */}
 
       {/* <StylePracticeInReact heading1={true}/> */}
 

@@ -11,13 +11,22 @@ import FragmentsPractice from './components/FragmentsPractice';
 import TableForFragmentsPractice from './components/TableForFragmentsPractice';
 import PureComponentsPractice from './components/PureComponentsPractice';
 import ParentCompPurePractice from './components/ParentCompPurePractice';
+import NormalCompForPure from './components/NormalCompForPure';
+import PureComponentDemo from './components/PureComponentDemo';
+import Parent from './components/Parent';
 
 
 function App() {
   return (
     <div className="App">
 
-      <ParentCompPurePractice/>
+      <Parent/>
+
+      {/* <NormalCompForPure/>
+
+      <PureComponentDemo/> */}
+
+      {/* <ParentCompPurePractice/> */}
 
       {/* <PureComponentsPractice/> */}
 

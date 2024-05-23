@@ -5,21 +5,28 @@ import WelcomeStudents from './components/WelcomeClassCompPractice';
 import Information from './components/Information';
 import CounterClassState from './components/CounterClassState';
 import StudentsWelcomeConditionalIfElse from './components/StudentsWelcomeConditionalIfElse';
-
-
 import StylePracticeInReact from './components/StylePracticeInReact';
 import ProductsList from './components/ProductsList';
 import FragmentsPractice from './components/FragmentsPractice';
 import TableForFragmentsPractice from './components/TableForFragmentsPractice';
 import PureComponentsPractice from './components/PureComponentsPractice';
 import ParentCompPurePractice from './components/ParentCompPurePractice';
+import NormalCompForPure from './components/NormalCompForPure';
+import PureComponentDemo from './components/PureComponentDemo';
+import Parent from './components/Parent';
 
 
 function App() {
   return (
     <div className="App">
 
-      <ParentCompPurePractice/>
+      <Parent/>
+
+      {/* <NormalCompForPure/>
+
+      <PureComponentDemo/> */}
+
+      {/* <ParentCompPurePractice/> */}
 
       {/* <PureComponentsPractice/> */}
 

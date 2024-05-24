@@ -14,13 +14,23 @@ import ParentCompPurePractice from './components/ParentCompPurePractice';
 import NormalCompForPure from './components/NormalCompForPure';
 import PureComponentDemo from './components/PureComponentDemo';
 import Parent from './components/Parent';
+import RefPractice from './components/RefPractice';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
 
 
 function App() {
   return (
     <div className="App">
 
-      <Parent/>
+      <ClickCounter/>
+      <HoverCounter/>
+      
+
+
+      {/* <RefPractice/> */}
+  
+      {/* <Parent/> */}
 
       {/* <NormalCompForPure/>
 

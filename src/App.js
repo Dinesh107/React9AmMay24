@@ -17,17 +17,18 @@ import Parent from './components/Parent';
 import RefPractice from './components/RefPractice';
 import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
+import PostData from './components/PostData';
 
 
 function App() {
   return (
     <div className="App">
 
-      <ClickCounter/>
-      <HoverCounter/>
+      <PostData/>
+
+      {/* <ClickCounter/>
+      <HoverCounter/> */}
       
-
-
       {/* <RefPractice/> */}
   
       {/* <Parent/> */}

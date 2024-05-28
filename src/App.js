@@ -18,13 +18,16 @@ import RefPractice from './components/RefPractice';
 import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
 import PostData from './components/PostData';
+import PostDataFromForm from './components/PostDataFromForm';
 
 
 function App() {
   return (
     <div className="App">
 
-      <PostData/>
+      <PostDataFromForm/>
+
+      {/* <PostData/> */}
 
       {/* <ClickCounter/>
       <HoverCounter/> */}

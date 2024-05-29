@@ -19,13 +19,19 @@ import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
 import PostData from './components/PostData';
 import PostDataFromForm from './components/PostDataFromForm';
+import CounterClassComp from './components/CounterClassComp';
+import HooksCounterWithFuncComp from './components/HooksCounterWithFuncComp';
 
 
 function App() {
   return (
     <div className="App">
 
-      <PostDataFromForm/>
+      <HooksCounterWithFuncComp/>
+
+      {/* <CounterClassComp/> */}
+
+      {/* <PostDataFromForm/> */}
 
       {/* <PostData/> */}
 

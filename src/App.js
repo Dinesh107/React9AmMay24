@@ -1,3 +1,4 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Welcome from './components/WelcomeFunctionalCompPractice';
@@ -21,13 +22,22 @@ import PostData from './components/PostData';
 import PostDataFromForm from './components/PostDataFromForm';
 import CounterClassComp from './components/CounterClassComp';
 import HooksCounterWithFuncComp from './components/HooksCounterWithFuncComp';
+import UseEffectPractice from './components/UseEffectPractice';
+import ComponentA from './components/ComponentA';
 
+export const UserContext = React.createContext();
 
 function App() {
   return (
     <div className="App">
 
-      <HooksCounterWithFuncComp/>
+      <UserContext.Provider value= {'Rohit'}>
+      <ComponentA/>
+      </UserContext.Provider>
+
+      {/* <UseEffectPractice/> */}
+
+      {/* <HooksCounterWithFuncComp/> */}
 
       {/* <CounterClassComp/> */}
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Welcome from './components/WelcomeFunctionalCompPractice';
@@ -24,16 +24,44 @@ import CounterClassComp from './components/CounterClassComp';
 import HooksCounterWithFuncComp from './components/HooksCounterWithFuncComp';
 import UseEffectPractice from './components/UseEffectPractice';
 import ComponentA from './components/ComponentA';
+import CustomerAdd from './components/CustomerAdd';
+import CustomerView from './components/CustomerView';
+import ProductCallbackPractice from './components/ProductCallbackPractice';
 
 export const UserContext = React.createContext();
 
 function App() {
+
+   const [product, setProduct] = useState(["Product1", "Product2"]);
+   const [count, setCount] = useState(0);
+   const [cart, setCart] = useState(0);
+
+   const addToCart = useCallback(() => {
+      console.log(cart);
+      setCart(cart + 1);
+
+   }, [cart]);
+
   return (
     <div className="App">
+         
+     <h1>React</h1>
 
-      <UserContext.Provider value= {'Rohit'}>
+       <div className="product-wrapper">
+            <h3>Count: {count}</h3>
+            <button onClick={() => setCount(count + 1)}> Count </button>
+            <h3>Cart:- {cart}</h3>
+           { product.map((p, i) => {
+                return <ProductCallbackPractice name={p}  addToCart={addToCart} key={i}/>
+           }) 
+           }
+       </div>
+
+      {/* <CustomerAdd/> */}
+
+      {/* <UserContext.Provider value= {'Rohit'}>
       <ComponentA/>
-      </UserContext.Provider>
+      </UserContext.Provider> */}
 
       {/* <UseEffectPractice/> */}
 
